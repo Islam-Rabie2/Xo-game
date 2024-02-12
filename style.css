@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    user-select: none;
+}
+.ctr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    background: teal;
+}
+.tabel {
+    width: 480px;
+    height:480px;
+    background: lightseagreen;
+    border-radius:100%;
+    border: 1px solid #061b42;
+    box-shadow: 2px 20px 0 -3px #030301 -20px 20px #000000;
+    flex-direction: column;
+}
+.board {
+    width: 369px;
+    height: 369px;
+    background: #0e205a;
+    border-radius: 20px;
+    border: 1px solid #000000;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 8px;
+    padding: 12px;
+}
+.board span {
+    background: aqua;
+    color: #000000;
+    font-size: 4en;
+    padding-left: 9px;
+    padding-top: 6px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease; 
+}
+.board > span:hover {
+    background: #36ca08;
+}
+.board > span:active {
+    box-shadow: -1.2px 7.4px 0px -2.5px #b1af4a;
+}
+#reset {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #061b42;
+    background-color: lightseagreen;
+    border: 0px;
+    font-size: 17px;
+}
+#reset:hover{
+    background-color: #38d640;
+    color: rgb(0, 0, 0);
+}
+.win {
+    background: #27f031 !important;
+}
+.tic {
+    color: #061b42;
+}
